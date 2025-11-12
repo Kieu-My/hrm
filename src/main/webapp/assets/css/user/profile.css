@@ -1,0 +1,55 @@
+.profile-content {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.profile-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #222;
+    text-align: center;
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.profile-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.profile-table tr:last-child {
+    border-bottom: none;
+}
+
+.profile-table td {
+    padding: 18px 20px;
+}
+
+.profile-table .label {
+    width: 25%;
+    font-weight: bold;
+    color: #333;
+    background-color: #f7f9fc;
+    text-align: left;
+}
+
+.profile-table .value {
+    width: 75%;
+    color: #444;
+    text-align: left;
+}
+
+/* Hiệu ứng zebra cho đẹp */
+.profile-table tr:nth-child(even) {
+    background-color: #fafafa;
+}

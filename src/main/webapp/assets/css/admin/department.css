@@ -1,0 +1,173 @@
+/* Container content */
+.content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Tiêu đề */
+.content h2, .content h3, .content h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* Debug text */
+.debug {
+    font-weight: bold;
+    color: #e74c3c;
+}
+.debug-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #2c3e50;
+}
+
+/* Bảng phòng ban */
+.department-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.department-table th,
+.department-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.department-table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.department-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.department-table tr:hover {
+    background-color: #d6eaf8;
+}
+
+/* Highlight dòng đang sửa */
+.department-table tr.editing {
+    background-color: #f39c12 !important;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Form thêm/sửa */
+.dept-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.dept-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.dept-form input[type="text"] {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.dept-form input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dept-form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+/* Vùng bao quanh danh sách nhân viên */
+.employee-section {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5e5e5;
+}
+
+/* Tiêu đề */
+.employee-section h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+}
+
+.employee-section h3 span {
+    color: #007bff;
+}
+
+/* Bảng hiển thị nhân viên */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Tiêu đề cột */
+.employee-table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+/* Dòng chẵn - lẻ xen kẽ */
+.employee-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hiệu ứng hover */
+.employee-table tbody tr:hover {
+    background-color: #eaf3ff;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* ID căn giữa */
+.employee-table td:first-child,
+.employee-table th:first-child {
+    text-align: center;
+    width: 60px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .employee-section {
+        padding: 15px;
+    }
+    .employee-table th, .employee-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .employee-section h3 {
+        font-size: 18px;
+    }
+}

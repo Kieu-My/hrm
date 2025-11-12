@@ -1,0 +1,88 @@
+/* payroll.css - chỉ style cho content (bảng lương) */
+
+/* chỉ áp dụng cho content */
+.content h2 {
+    margin: 0 0 18px 0;
+    color: #0d47a1;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* wrapper để bảng gọn hơn */
+.content .table-wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 12px auto 0 auto;
+}
+
+/* Bảng lương */
+.salary-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.06);
+    font-family: inherit;
+}
+
+/* header */
+.salary-table thead th {
+    background: #1976d2;
+    color: #fff;
+    padding: 12px 14px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* body */
+.salary-table tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #eef2f6;
+    font-size: 14px;
+    color: #333;
+}
+
+/* dòng xen kẽ */
+.salary-table tbody tr:nth-child(even) {
+    background: #fbfdff;
+}
+
+/* hover */
+.salary-table tbody tr:hover {
+    background: #f1f7ff;
+}
+
+/* căn phải các cột số tiền */
+.salary-table tbody td:nth-child(2),
+.salary-table tbody td:nth-child(3),
+.salary-table tbody td:nth-child(4),
+.salary-table tbody td:nth-child(5) {
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* khi không có dữ liệu */
+.salary-table tbody td[colspan] {
+    text-align: center;
+    color: #e74c3c;
+    font-weight: 600;
+    background: #fff6f6;
+    padding: 18px;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .content {
+        padding: 12px;
+    }
+    .table-wrap {
+        overflow-x: auto;
+    }
+    .salary-table thead th,
+    .salary-table tbody td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

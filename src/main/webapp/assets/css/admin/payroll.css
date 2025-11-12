@@ -1,0 +1,209 @@
+/* Content tổng */
+.content {
+    flex: 1;
+    padding: 20px 30px;
+    background-color: #f5f5f5;
+}
+
+/* Tiêu đề */
+.content h1 {
+    margin-bottom: 20px;
+    color: #0d47a1;
+    font-size: 24px;
+}
+
+/* Form Thêm / Sửa Lương */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.form-container input[type="number"],
+.form-container input[type="date"] {
+    padding: 6px 10px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #0d47a1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-submit:hover {
+    background-color: #1976d2;
+}
+
+/* Bảng payroll */
+.payroll-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.payroll-table th,
+.payroll-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.payroll-table th {
+    background-color: #0d47a1;
+    color: #fff;
+}
+
+.payroll-table td a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Nút sửa */
+.btn-edit {
+    background-color: #ffa000;
+}
+
+.btn-edit:hover {
+    background-color: #ffb300;
+}
+
+/* Nút xóa */
+.btn-delete {
+    background-color: #d32f2f;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+/* ------------------------------
+   Search & Filter Container
+   Chủ đạo: #0d47a1 (xanh đậm)
+--------------------------------*/
+
+.search-filter-container {
+    background-color: #e3f2fd; /* xanh nhạt để nổi phần form */
+    border: 1px solid #bbdefb;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(13, 71, 161, 0.15);
+}
+
+/* Form layout ngang */
+.search-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Label */
+.search-form label {
+    font-weight: 600;
+    color: #0d47a1;
+    margin-right: 8px;
+}
+
+/* Input và select */
+.search-form input[type="number"],
+.search-form input[type="month"],
+.search-form select {
+    padding: 8px 10px;
+    border: 1px solid #90caf9;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 180px;
+}
+
+.search-form input:focus,
+.search-form select:focus {
+    border-color: #0d47a1;
+    box-shadow: 0 0 5px rgba(13, 71, 161, 0.4);
+}
+
+/* Nút bấm */
+.search-form .btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Nút tìm kiếm */
+.search-form .btn-search {
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+}
+
+.search-form .btn-search:hover {
+    background-color: #1565c0;
+}
+
+/* Nút làm mới */
+.search-form .btn-reset {
+    background-color: #ffffff;
+    color: #0d47a1;
+    border: 1px solid #0d47a1;
+}
+
+.search-form .btn-reset:hover {
+    background-color: #0d47a1;
+    color: #ffffff;
+}
+
+/* Icon Font Awesome */
+.search-form i {
+    font-size: 14px;
+}
+
+/* Responsive: thu gọn khi màn hình nhỏ */
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-form input,
+    .search-form select {
+        width: 100%;
+    }
+
+    .search-form .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+

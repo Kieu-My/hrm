@@ -1,0 +1,169 @@
+/* ======= MAIN CONTENT STYLE ======= */
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f9fafc;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* ======= PAGE TITLE ======= */
+.page-title {
+    color: #0d47a1;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #0d47a1;
+    padding-bottom: 10px;
+}
+
+/* ======= FILTER FORM ======= */
+.filter-form {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #ffffff;
+    padding: 20px 25px;
+    border: 1px solid #dbe2ef;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(13, 71, 161, 0.15);
+    margin-bottom: 25px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    font-weight: 600;
+    color: #0d47a1;
+    margin-bottom: 6px;
+}
+
+.filter-group input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 200px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.filter-group input:focus {
+    border-color: #0d47a1;
+    box-shadow: 0 0 4px rgba(13, 71, 161, 0.3);
+}
+
+/* ======= BUTTONS ======= */
+.filter-group.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-search,
+.btn-reset {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-search {
+    background-color: #0d47a1;
+    color: #fff;
+    border: none;
+}
+
+.btn-search:hover {
+    background-color: #093380;
+    transform: translateY(-1px);
+}
+
+.btn-reset {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    border: 1px solid #0d47a1;
+}
+
+.btn-reset:hover {
+    background-color: #bbdefb;
+}
+
+/* ======= TABLE STYLE ======= */
+.table-container {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(13, 71, 161, 0.1);
+    overflow-x: auto;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.attendance-table th,
+.attendance-table td {
+    text-align: center;
+    padding: 12px 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.attendance-table th {
+    background-color: #0d47a1;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.attendance-table tr:hover {
+    background-color: #f1f7ff;
+}
+
+.attendance-table td {
+    color: #333;
+    font-size: 14px;
+}
+
+/* ======= EMPTY DATA STYLE ======= */
+.attendance-table td[colspan] {
+    color: #888;
+    font-style: italic;
+}
+
+/* ======= RESPONSIVE DESIGN ======= */
+@media (max-width: 768px) {
+    .filter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group input {
+        width: 100%;
+    }
+
+    .btn-search, .btn-reset {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .attendance-table th,
+    .attendance-table td {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+}
